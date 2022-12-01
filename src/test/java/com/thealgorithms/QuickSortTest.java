@@ -4,10 +4,29 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 import org.junit.jupiter.api.Test;
 
+import org.junit.runner.RunWith;
+import com.pholser.junit.quickcheck.*;
+import com.pholser.junit.quickcheck.generator.*;
+import edu.berkeley.cs.jqf.fuzz.*;
+
+
 /**
  * @author Akshay Dubey (https://github.com/itsAkshayDubey)
  * @see QuickSort
  */
+@RunWith(JQF.class)
+public class QuickSortTest {
+
+    @Fuzz
+    public void quickSortTest(@From(QuickSortGenerator.class) Integer[] array) {
+        Integer[] expected = array;
+        java.util.Arrays.sort(expected);
+        QuickSort quicksort = new QuickSort();
+        Integer[] sorted = quicksort.sort(array);
+        assertArrayEquals(expected, sorted);
+    }
+}
+/*
 class QuickSortTest {
 
     private QuickSort quickSort = new QuickSort();
@@ -60,3 +79,4 @@ class QuickSortTest {
         assertArrayEquals(expected, sorted);
     }
 }
+*/
