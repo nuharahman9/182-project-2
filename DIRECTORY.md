@@ -487,8 +487,10 @@
               * [zigZagPattern](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/strings/zigZagPattern/zigZagPattern.java)
   * test
           * [BinaryToDecimalTest](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/BinaryToDecimalTest.java)
+          * [QuickSortGenerator](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/QuickSortGenerator.java)
           * [QuickSortTest](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/QuickSortTest.java)
           * [ReverseStringGenerator](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/ReverseStringGenerator.java)
           * [ReverseStringTest](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/ReverseStringTest.java)
           * [SquareRootWithNewtonRaphsonTestMethod](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/SquareRootWithNewtonRaphsonTestMethod.java)
+          * [ValidParenthesesGenerator](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/ValidParenthesesGenerator.java)
           * [ValidParenthesesTest](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/ValidParenthesesTest.java)
