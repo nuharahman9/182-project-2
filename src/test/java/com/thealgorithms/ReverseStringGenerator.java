@@ -14,9 +14,11 @@ public class ReverseStringGenerator extends Generator<String> {
 
     @Override 
     public String generate(SourceOfRandomness random, GenerationStatus __ignore__){
-        String s = "a"; 
+        String s = null; 
         char c; 
-        for (int i = 0; i < 12; i++){
+        int sz = random.nextInt(30); 
+
+        for (int i = 0; i < sz; i++){
             c = (char)(random.nextInt(26) + 'a'); 
             s = s + c; 
         }

@@ -13,7 +13,7 @@ import com.pholser.junit.quickcheck.*;
 import com.pholser.junit.quickcheck.generator.*;
 import edu.berkeley.cs.jqf.fuzz.*;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Assertions;
 
 
 
@@ -22,12 +22,12 @@ public class ReverseStringTest {
 
     @Fuzz
     public void ReverseStringTest(@From(ReverseStringGenerator.class) String s) {
-        assumeTrue(s.length() == 12); 
+    //    assumeTrue(s.length() == 12); 
         StringBuilder input1 = new StringBuilder(); 
         input1.append(s); 
         input1.reverse(); 
         String stInput = input1.toString(); 
-        assertTrue(stInput == ReverseString.reverse(s)); 
+        Assertions.assertEquals(stInput, ReverseString.reverse(s)); 
 
     }
 }
