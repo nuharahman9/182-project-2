@@ -1,14 +1,12 @@
 package com.thealgorithms.strings;
-
 import org.junit.jupiter.api.Test;
 import java.lang.*;
 import java.io.*;
 import java.util.*;
-
+import org.junit.runner.RunWith;
 import static org.junit.Assert.*;
 import static org.junit.Assume.*;
 
-import org.junit.runner.RunWith;
 import com.pholser.junit.quickcheck.*;
 import com.pholser.junit.quickcheck.generator.*;
 import edu.berkeley.cs.jqf.fuzz.*;
