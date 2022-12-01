@@ -1,4 +1,7 @@
 package com.thealgorithms.strings;
+import org.junit.runner.RunWith;
+import java.util.*; 
+import edu.berkeley.cs.jqf.fuzz.*;
 
 /**
  * Reverse String using different version
@@ -7,18 +10,8 @@ public class ReverseString {
 
     public static void main(String[] args) {
         assert reverse("abc123").equals("321cba");
-        assert reverse2("abc123").equals("321cba");
     }
 
-    /**
-     * easiest way to reverses the string str and returns it
-     *
-     * @param str string to be reversed
-     * @return reversed string
-     */
-    public static String reverse(String str) {
-        return new StringBuilder(str).reverse().toString();
-    }
 
     /**
      * second way to reverses the string str and returns it
@@ -26,7 +19,7 @@ public class ReverseString {
      * @param str string to be reversed
      * @return reversed string
      */
-    public static String reverse2(String str) {
+    public static String reverse(String str) {
         if (str == null || str.isEmpty()) {
             return str;
         }

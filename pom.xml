@@ -45,6 +45,12 @@
             <version>5.9.0</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>edu.berkeley.cs.jqf</groupId>
+            <artifactId>jqf-fuzz</artifactId>
+            <version>1.7</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -53,6 +59,12 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
             </plugin>
+            <plugin>
+                <groupId>edu.berkeley.cs.jqf</groupId>
+                <artifactId>jqf-maven-plugin</artifactId>
+                <version>1.9</version>
+
+            </plugin> 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
