@@ -14,11 +14,11 @@ import edu.berkeley.cs.jqf.fuzz.*;
 public class SquareRootWithNewtonRaphsonMethodTest {
 
     @Fuzz
-    void SquareRootWithNewtonRaphsonMethodTest(@From(SquareRootWithNewtonRaphsonMethodGenerator.class) Integer n) {
-        int a = Math.sqrt(n); 
+    public void SquareRootWithNewtonRaphsonMethodTest(@From(SquareRootWithNewtonRaphsonMethodGenerator.class) Integer[] n) {
+        double a = Math.sqrt(n[0]); 
         Assertions.assertEquals(
             a,
-            SquareRootWithNewtonRaphsonMethod.squareRoot(n)
+            SquareRootWithNewtonRaphsonMethod.squareRoot(n[0])
         );
     }
 

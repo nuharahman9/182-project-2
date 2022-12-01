@@ -1,5 +1,4 @@
-package com.thealgorithms.conversions;
-
+package com.thealgorithms.strings; 
 import org.junit.jupiter.api.Test;
 import com.pholser.junit.quickcheck.*;
 import com.pholser.junit.quickcheck.generator.*;
@@ -12,13 +11,14 @@ import java.lang.Math;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+
 @RunWith(JQF.class)
-public class BinaryToDecimalTest {
+public class UpperTest {
 
     @Fuzz
-    public void BinaryToDecimalTest(@From(BinaryToDecimalGenerator.class) String n) {
-        int decimal = Integer.parseInt(n, 2); 
-        Assertions.assertEquals(decimal, BinaryToDecimal.binaryToDecimal(Integer.parseInt(n))); 
-
+    public void UpperTest(@From(UpperGenerator.class) String n){
+        String res = n.toUpperCase(); 
+        Assertions.assertEquals(res, Upper.toUpper(n)); 
     }
+
 }

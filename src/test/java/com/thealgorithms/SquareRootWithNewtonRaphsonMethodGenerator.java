@@ -4,20 +4,20 @@ import com.pholser.junit.quickcheck.generator.Generator;
 import com.pholser.junit.quickcheck.random.SourceOfRandomness;
 
 
-public class SquareRootWithNewtonRaphsonMethodGenerator extends Generator<Integer> {
+public class SquareRootWithNewtonRaphsonMethodGenerator extends Generator<Integer[]> {
     public SquareRootWithNewtonRaphsonMethodGenerator(){
-        super(Integer.class); 
+        super(Integer[].class); 
     }
-    @Override 
-    public int generate(SourceOfRandomness random, GenerationStatus __ignore__){
-       int n = 0; 
+
+    @Override
+    public Integer[] generate(SourceOfRandomness random, GenerationStatus __ignore__){
+       Integer[] n = new Integer[1]; 
        if (random.nextBoolean()){
-        return null; 
-       } 
-
-       n = random.nextInt(); 
-       return n; 
-
+         n[0] = null; 
+       } else {
+         n[0] = random.nextInt(); 
+       }
+        return n; 
     }
 
 }
