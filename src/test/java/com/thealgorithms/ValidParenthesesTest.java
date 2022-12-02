@@ -22,12 +22,9 @@ public class ValidParenthesesTest {
         int length = parens.length() - 1;
         java.util.Random rand = new java.util.Random();
         int pos = rand.nextInt(0, length);
-        //String testString = parens.substring(0, pos);
-        //testString += parens.substring(pos + 1, length);
         java.lang.StringBuilder testString = new StringBuilder(parens);
         testString.deleteCharAt(pos);
         parens = testString.toString();
-        //assumeTrue(0 < testString.length());
         assertFalse(ValidParentheses.isValid(parens));
     }
 
