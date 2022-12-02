@@ -11,10 +11,12 @@ public class BinaryToDecimalGenerator extends Generator<String> {
 
     @Override 
     public String generate(SourceOfRandomness random, GenerationStatus __ignore__){
-        String n = null; 
-        int sz = random.nextInt(60); 
-        if (random.nextBoolean()) {
-            return n; 
+/*   
+        String = null
+
+        int sz = random.nextInt(0, 29); 
+        if (0 == random.nextInt(0, 1000)) {     //1 in 1000 chance of null
+            return n;
         }
         for (int i = 0; i < sz; i++){
             if (random.nextBoolean()){
@@ -22,8 +24,11 @@ public class BinaryToDecimalGenerator extends Generator<String> {
             } else {
                 n = n + '1'; 
             }
-        }   
-
-        return n; 
+        }
+*/
+    if (0 == random.nextInt(0, 1000)) {     //1 in 1000 chance of null
+        return null;
+    }
+        return "" + random.nextInt(0, 1023);    //any larger than 1023 and the binary number won't fit in an int
     }
 }

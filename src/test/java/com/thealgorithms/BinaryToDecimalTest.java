@@ -17,8 +17,7 @@ public class BinaryToDecimalTest {
 
     @Fuzz
     public void BinaryToDecimalTest(@From(BinaryToDecimalGenerator.class) String n) {
-        int decimal = Integer.parseInt(n, 2); 
+        int decimal = Integer.parseInt(n, 2);
         Assertions.assertEquals(decimal, BinaryToDecimal.binaryToDecimal(Integer.parseInt(n))); 
-
     }
 }
