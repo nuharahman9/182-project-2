@@ -488,6 +488,7 @@
   * test
           * [BinaryToDecimalGenerator](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/BinaryToDecimalGenerator.java)
           * [BinaryToDecimalTest](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/BinaryToDecimalTest.java)
+          * [logCoverage](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/logCoverage.java)
           * [QuickSortGenerator](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/QuickSortGenerator.java)
           * [QuickSortTest](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/QuickSortTest.java)
           * [ReverseStringGenerator](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/ReverseStringGenerator.java)
