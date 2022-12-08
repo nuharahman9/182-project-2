@@ -21,11 +21,17 @@ public class ReverseStringTest {
     @Fuzz
     public void ReverseStringTest(@From(ReverseStringGenerator.class) String s) {
     //    assumeTrue(s.length() == 12); 
-        StringBuilder input1 = new StringBuilder(); 
-        input1.append(s); 
-        input1.reverse(); 
-        String stInput = input1.toString(); 
-        Assertions.assertEquals(stInput, ReverseString.reverse(s)); 
+        if (s == null){
+            Assertions.assertEquals(null, ReverseString.reverse(null)); 
+        }
+        
+        else {
+            StringBuilder input1 = new StringBuilder(); 
+            input1.append(s); 
+            input1.reverse(); 
+            String stInput = input1.toString(); 
+            Assertions.assertEquals(stInput, ReverseString.reverse(s));
+        } 
 
     }
 }

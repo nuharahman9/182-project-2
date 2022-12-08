@@ -16,14 +16,25 @@ public class ReverseStringGenerator extends Generator<String> {
     public String generate(SourceOfRandomness random, GenerationStatus __ignore__){
         String s = null; 
         char c; 
-        int sz = random.nextInt(30); 
+        int sz = random.nextInt(0, 30); 
+        if (sz == 0){
+            if (random.nextBoolean()){
+                return ""; 
+            } else {
+                return s; 
+            }
+        }
+        else {
+            s = ""; 
+            for (int i = 0; i < sz; i++){
+                 s = s + (char)random.nextInt(127); 
+            }
 
-        for (int i = 0; i < sz; i++){
-            c = (char)(random.nextInt(26) + 'a'); 
-            s = s + c; 
+            return s; 
+
+            
         }
 
-        return s; 
 
 
     }
