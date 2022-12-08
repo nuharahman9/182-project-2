@@ -11,10 +11,11 @@ public class UpperGenerator extends Generator<String> {
 
     @Override 
     public String generate(SourceOfRandomness random, GenerationStatus __ignore__){
-        String n = null; 
+        String n = ""; 
         int sz = random.nextInt(60); 
         if (random.nextBoolean()) {
-            return n; 
+            String a = null;
+            return a; 
         }
         for (int i = 0; i < sz; i++){
            n = n + (char)random.nextInt(127); 

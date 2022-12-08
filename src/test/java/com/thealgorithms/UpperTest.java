@@ -17,8 +17,24 @@ public class UpperTest {
 
     @Fuzz
     public void UpperTest(@From(UpperGenerator.class) String n){
-        String res = n.toUpperCase(); 
-        Assertions.assertEquals(res, Upper.toUpper(n)); 
+        if (n == null){
+            Assertions.assertEquals(Upper.toUpper(n), null); 
+        }
+        else {
+            String res = n.toUpperCase(); 
+            Assertions.assertEquals(res, Upper.toUpper(n)); 
+
+        }
+
+
     }
+
+    // @Test
+    // public void edgeCases(){
+    //     Assertions.assertEquals("AB", Upper.toUpper("ab")); 
+    //     Assertions.assertEquals("AB", Upper.toUpper("AB")); 
+    //     Assertions.assertEquals(null, Upper.toUpper(null)); 
+    //     Assertions.assertEquals("", Upper.toUpper("")); 
+    // }
 
 }

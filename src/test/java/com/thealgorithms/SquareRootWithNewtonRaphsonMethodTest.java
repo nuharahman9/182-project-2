@@ -18,12 +18,25 @@ public class SquareRootWithNewtonRaphsonMethodTest {
     public void SquareRootWithNewtonRaphsonMethodTest(@From(SquareRootWithNewtonRaphsonMethodGenerator.class) String n) {
         int num = Integer.parseInt(n); 
         double res = Math.sqrt(num); 
-        assumeTrue(num - SquareRootWithNewtonRaphsonMethod.squareRoot(num) < 0.00001); 
-        Assertions.assertEquals(num, SquareRootWithNewtonRaphsonMethod.squareRoot(num)); 
-
+        assumeTrue(num - SquareRootWithNewtonRaphsonMethod.squareRoot(num) < 0.001); 
+         Assertions.assertEquals(num, SquareRootWithNewtonRaphsonMethod.squareRoot(num)); 
 
 
     }
+
+    // @Test 
+    // public void squareRootZero(){
+    //     int num = 0; 
+    //     Assertions.assertEquals(0, SquareRootWithNewtonRaphsonMethod.squareRoot(0)); 
+    // }
+
+    // @Test 
+    // public void squareRootWithNegative(){
+    //     int num = -1;
+    //     double a = Math.sqrt(-1);  
+    //     Assertions.assertEquals(a, SquareRootWithNewtonRaphsonMethod.squareRoot(num)); 
+    // }
+
 
 
 }
