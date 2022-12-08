@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.thealgorithms.strings.ValidParenthesesTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! - in com.thealgorithms.strings.ValidParenthesesTest
+testEmpty  Time elapsed: 0.013 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+	at com.thealgorithms.strings.ValidParenthesesTest.testEmpty(ValidParenthesesTest.java:54)
+
+testNull  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is null
+	at com.thealgorithms.strings.ValidParenthesesTest.testNull(ValidParenthesesTest.java:50)
+

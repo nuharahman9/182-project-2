@@ -1,0 +1,21 @@
+(-348119030) com/thealgorithms/strings/Upper#toUpper():19 [0]
+(-348119030) com/thealgorithms/strings/Upper#toUpper():19 [1]
+(-348119032) com/thealgorithms/strings/Upper#toUpper():18 [0]
+(-348119032) com/thealgorithms/strings/Upper#toUpper():18 [1]
+(-348119034) com/thealgorithms/strings/Upper#toUpper():16 [0]
+(-348119034) com/thealgorithms/strings/Upper#toUpper():16 [1]
+(-348119037) com/thealgorithms/strings/Upper#toUpper():12 [1]
+(-348119039) com/thealgorithms/strings/Upper#toUpper():12 [0]
+(000000000) #<unknown>():0 --> com/thealgorithms/strings/UpperGenerator#<init>()V
+(1350631425) org/junit/jupiter/api/AssertionUtils#objectsAreEqual():107 [1]
+(1762078721) org/junit/jupiter/api/Assertions#assertEquals():1141 --> org/junit/jupiter/api/AssertEquals#assertEquals(Ljava/lang/Object;Ljava/lang/Object;)V
+(1770004483) com/thealgorithms/strings/UpperGenerator#generate():16 [1]
+(1770004485) com/thealgorithms/strings/UpperGenerator#generate():20 [0]
+(1770004485) com/thealgorithms/strings/UpperGenerator#generate():20 [1]
+(1770008577) com/thealgorithms/strings/UpperGenerator#generate():7 --> com/thealgorithms/strings/UpperGenerator#generate(Lcom/pholser/junit/quickcheck/random/SourceOfRandomness;Lcom/pholser/junit/quickcheck/generator/GenerationStatus;)Ljava/lang/String;
+(1979830273) org/junit/jupiter/api/AssertEquals#assertEquals():177 --> org/junit/jupiter/api/AssertEquals#assertEquals(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/String;)V
+(1979834369) org/junit/jupiter/api/AssertEquals#assertEquals():181 --> org/junit/jupiter/api/AssertionUtils#objectsAreEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+(1979834370) org/junit/jupiter/api/AssertEquals#assertEquals():181 [1]
+(2009079809) com/thealgorithms/strings/UpperTest#UpperTest():20 [1]
+(2009079813) com/thealgorithms/strings/UpperTest#UpperTest():25 --> com/thealgorithms/strings/Upper#toUpper(Ljava/lang/String;)Ljava/lang/String;
+(2009079814) com/thealgorithms/strings/UpperTest#UpperTest():25 --> org/junit/jupiter/api/Assertions#assertEquals(Ljava/lang/Object;Ljava/lang/Object;)V

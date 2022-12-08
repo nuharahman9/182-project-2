@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.thealgorithms.searches.RowColumnWiseSorted2dArrayBinarySearchTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.thealgorithms.searches.RowColumnWiseSorted2dArrayBinarySearchTest
